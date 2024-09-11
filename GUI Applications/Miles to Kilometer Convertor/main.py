@@ -1,12 +1,14 @@
 import tkinter as tk
-from tkinter import ttk
+# from tkinter import ttk
+import ttkbootstrap as ttk
 
 def convert():
     miles = user_input.get()
     kilometers = str(round(miles * 1.61,2))
     output_str.set(kilometers + "Km")
     
-window = tk.Tk()
+# window = tk.Tk()
+window = ttk.Window(themename="minty")
 window.title("MtK")
 window.geometry("320x150")
 
